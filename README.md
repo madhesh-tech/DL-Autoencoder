@@ -4,12 +4,12 @@
 To develop a convolutional autoencoder for image denoising application.
 
 ## THEORY
-This code implements a **Denoising Autoencoder** using PyTorch to clean noisy images from the MNIST dataset. It uses a convolutional neural network architecture, where the encoder compresses the input image into a lower-dimensional representation, and the decoder reconstructs the original image from this compressed form. To train the model to remove noise, Gaussian noise is added to the clean images, and the network learns to recover the original from the noisy version. The training process uses **Mean Squared Error (MSE)** as the loss function to measure the reconstruction error and the **Adam optimizer** to update the model weights. The autoencoder is trained over multiple epochs using mini-batches of data for efficiency. After training, the model's performance is visually evaluated by displaying the original, noisy, and denoised images side by side.
-
+A convolutional autoencoder is used for image denoising by learning to reconstruct clean images from noisy inputs. It uses an encoder to compress the image and a decoder to restore it, trained using MSE loss.
+## Problem statement
+The problem is to develop a convolutional autoencoder model that can remove noise from images. The model should learn to reconstruct clean images from noisy inputs using the given dataset and minimize reconstruction error.
 
 
 ## Neural Network Model
-Include the neural network model diagram.
 
 ## DESIGN STEPS
 ### STEP 1: 
